@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BASE_URL, Button, Container } from "../App";
+import { FaRupeeSign } from "react-icons/fa";
 
 const SearchResult = ({ data }) => {
   return (
@@ -17,7 +18,7 @@ const SearchResult = ({ data }) => {
                   <h3>{name}</h3>
                   <p>{truncateText(text)}</p>
                 </div>
-                <Button>${price.toFixed(2)}</Button>
+                <Button><FaRupeeSign />{price.toFixed(2)}</Button>
               </div>
             </FoodCard>
           ))}
